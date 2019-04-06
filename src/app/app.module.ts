@@ -28,6 +28,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +57,8 @@ import { SignupComponent } from './auth/signup/signup.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

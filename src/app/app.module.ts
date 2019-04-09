@@ -1,6 +1,8 @@
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// tslint:disable-next-line: import-spacing
+import { FlexLayoutModule }  from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +26,10 @@ import { OffersComponent } from './offers/offers.component';
 import { AuthComponent } from './auth/auth.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { SignupComponent } from './auth/signup/signup.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { NavtabComponent } from './navigation/navtab/navtab.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 
 
@@ -50,7 +56,11 @@ import { SignupComponent } from './auth/signup/signup.component';
     AuthComponent,
     SigninComponent,
     SignupComponent,
-    FoodAndBeverageComponent
+    FoodAndBeverageComponent,
+    HomeComponent,
+    HeaderComponent,
+    NavtabComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +68,8 @@ import { SignupComponent } from './auth/signup/signup.component';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

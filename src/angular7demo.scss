@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$angular7demo-primary: mat-palette($mat-teal, 200);
+$angular7demo-accent:  mat-palette($mat-teal, 50);
+
+
+$angular7demo-warn:    mat-palette($mat-red);
+
+
+$angular7demo: mat-light-theme($angular7demo-primary, $angular7demo-accent, $angular7demo-warn);
+
+
+@include angular-material-theme($angular7demo);
+
+
+.navtabs-container {
+    background-color: mat-color($angular7demo-warn);
+}
